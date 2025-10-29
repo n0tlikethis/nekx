@@ -2,6 +2,7 @@ import { TabsContent } from "@/components/ui/tabs";
 import { PendingLawyers } from "./components/pending-lawyers";
 import { VerifiedLawyers } from "./components/verified-lawyers";
 import { PendingPayouts } from "./components/pending-payouts";
+import { ArticlesManagement } from "./components/articles-management";
 import {
   getPendingLawyers,
   getVerifiedLawyers,
@@ -29,6 +30,10 @@ export default async function AdminPage() {
 
       <TabsContent value="payouts" className="border-none p-0">
         <PendingPayouts payouts={pendingPayoutsData.payouts || []} />
+      </TabsContent>
+
+      <TabsContent value="articles" className="border-none p-0">
+        <ArticlesManagement />
       </TabsContent>
     </>
   );
