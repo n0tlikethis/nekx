@@ -43,3 +43,4 @@ lib/private.key
 
 # direnv
 /.direnv/
+/.swc/
