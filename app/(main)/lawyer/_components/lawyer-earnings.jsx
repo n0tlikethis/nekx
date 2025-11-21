@@ -88,7 +88,7 @@ export function LawyerEarnings({ earnings, payouts = [] }) {
                   {availableCredits}
                 </p>
                 <p className="text-xs text-muted-foreground">
-                  ${availablePayout.toFixed(2)} available for payout
+                  Rp. {(availablePayout * 16000).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} available for payout
                 </p>
               </div>
               <div className="bg-emerald-900/20 p-3 rounded-full">
@@ -104,7 +104,7 @@ export function LawyerEarnings({ earnings, payouts = [] }) {
               <div>
                 <p className="text-sm text-muted-foreground">This Month</p>
                 <p className="text-3xl font-bold text-white">
-                  ${thisMonthEarnings.toFixed(2)}
+                  Rp. {(thisMonthEarnings * 16000).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
                 </p>
               </div>
               <div className="bg-emerald-900/20 p-3 rounded-full">
@@ -139,7 +139,7 @@ export function LawyerEarnings({ earnings, payouts = [] }) {
               <div>
                 <p className="text-sm text-muted-foreground">Avg/Month</p>
                 <p className="text-3xl font-bold text-white">
-                  ${averageEarningsPerMonth.toFixed(2)}
+                  Rp. {(averageEarningsPerMonth * 16000).toFixed(0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")}
                 </p>
               </div>
               <div className="bg-emerald-900/20 p-3 rounded-full">
